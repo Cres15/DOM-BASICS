@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+.background {
+    @apply bg-[#C2E2FA]
+}
+
+.title {
+    @apply text-center text-3xl font-bold underline bg-[#FF8F8F]  mt-10 mx-100 py-5
+}
+
+.product {
+    @apply text-center text-2xl font-bold my-5
+}
+
+.bg1 {
+    @apply bg-[#D78FEE] mr-180
+}
+
+.cart{
+    @apply text-center bg-[#CBD99B] 
+}
+.productItem {
+    @apply grid grid-cols-3 gap-y-6 gap-x-6 row-span-3 pb-70 bg-[#B7A3E3]
+}
+
+.Item {
+    @apply my-1 mx-1
+}
