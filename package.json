@@ -1,6 +1,24 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.15",
-    "tailwindcss": "^4.1.15"
-  }
+    "@tailwindcss/cli": "^4.1.16",
+    "@tailwindcss/vite": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  },
+  "name": "dom-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cres15/DOM-BASICS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cres15/DOM-BASICS/issues"
+  },
+  "homepage": "https://github.com/Cres15/DOM-BASICS#readme"
 }

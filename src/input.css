@@ -2,28 +2,41 @@
 
 
 .background {
-    @apply bg-[#C2E2FA]
+    @apply bg-[#FFF1CB]
 }
 
 .title {
-    @apply text-center text-3xl font-bold underline bg-[#FF8F8F]  mt-10 mx-100 py-5
+    @apply text-center text-3xl font-bold underline bg-[#FFBBE1] mt-2 mx-90 py-4
 }
 
 .product {
-    @apply text-center text-2xl font-bold my-5
+    @apply text-center text-2xl font-bold border-2 border-solid bg-[#FFBBE1] rounded-2xl
 }
 
 .bg1 {
-    @apply bg-[#D78FEE] mr-180
+    @apply bg-[#D78FEE] w-[380px] h-[465px] p-4 rounded-lg ml-30 
 }
 
-.cart{
-    @apply text-center bg-[#CBD99B] 
+.container {
+    @apply justify-center gap-5 mt-7 
 }
+
+.main-container{
+    @apply grid grid-cols-2 gap-10 w-full max-w-6xl mx-auto mt-7
+}
+
 .productItem {
-    @apply grid grid-cols-3 gap-y-6 gap-x-6 row-span-3 pb-70 bg-[#B7A3E3]
+    @apply grid grid-cols-2 gap-1 mt-9 my-1 font-semibold
 }
 
 .Item {
-    @apply my-1 mx-1
+    @apply border-2 border-solid p-2 bg-white w-[170px] h-[70px] flex flex-col justify-center items-center rounded-lg
+}
+
+.cartTitle{
+    @apply bg-[#D78FEE] w-[380px] h-[465px] pt-4 rounded-lg text-center text-2xl font-bold ml-20 mt-7
+}
+
+.cart2 {
+    @apply bg-[#FFBBE1] text-center font-bold text-2xl border-2 border-solid rounded-2xl
 }
