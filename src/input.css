@@ -1,42 +1,55 @@
 @import "tailwindcss";
 
-
-.background {
-    @apply bg-[#FFF1CB]
+.body {
+  @apply bg-[#FFF1CB];
 }
 
+/* Page Title */
 .title {
-    @apply text-center text-3xl font-bold underline bg-[#FFBBE1] mt-2 mx-90 py-4
+  @apply text-center text-3xl font-bold underline bg-[#FFBBE1] mt-4 py-4 rounded-md mx-auto w-[400px];
 }
 
+/* Main Container (2-column grid) */
+.main-container {
+  @apply grid grid-cols-2 gap-10 w-full max-w-5xl mx-auto mt-10;
+}
+
+/* Shared layout for Product & Cart boxes */
+.section {
+  @apply flex flex-col bg-[#D78FEE] rounded-2xl shadow-lg p-4 items-center;
+}
+
+/* Section headers */
 .product {
-    @apply text-center text-2xl font-bold border-2 border-solid bg-[#FFBBE1] rounded-2xl
+  @apply text-center text-2xl font-bold bg-[#FFBBE1] border-2 border-black rounded-xl px-6 py-2 w-[85%];
 }
 
-.bg1 {
-    @apply bg-[#D78FEE] w-[380px] h-[465px] p-4 rounded-lg ml-30 
+/* Container for content (products or cart) */
+.section-content {
+  @apply mt-4 w-full flex flex-col items-center;
 }
 
-.container {
-    @apply justify-center gap-5 mt-7 
-}
-
-.main-container{
-    @apply grid grid-cols-2 gap-10 w-full max-w-6xl mx-auto mt-7
-}
-
+/* Product list grid */
 .productItem {
-    @apply grid grid-cols-2 gap-1 mt-9 my-1 font-semibold
+  @apply grid grid-cols-2 gap-2 font-semibold;
 }
 
+/* Individual product items */
 .Item {
-    @apply border-2 border-solid p-2 bg-white w-[170px] h-[70px] flex flex-col justify-center items-center rounded-lg
+  @apply border-2 border-black bg-white w-[150px] h-[70px] flex flex-col justify-center items-center rounded-lg shadow-md;
 }
 
-.cartTitle{
-    @apply bg-[#D78FEE] w-[380px] h-[465px] pt-4 rounded-lg text-center text-2xl font-bold ml-20 mt-7
+/* Cart area */
+.cart {
+  @apply bg-white border-2 border-black rounded-lg w-[320px] h-[320px] mt-4 p-2 overflow-auto;
 }
 
-.cart2 {
-    @apply bg-[#FFBBE1] text-center font-bold text-2xl border-2 border-solid rounded-2xl
+/* Total text under cart */
+.total-text {
+  @apply mt-4 text-lg font-semibold;
+}
+
+
+.cart-item {
+  @apply cursor-pointer transition hover:bg-[#f9a9d1];
 }

@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Cart System</title>
-    <link href="src/output.css" rel="stylesheet">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <title>Simple Cart System</title>
 </head>
-<body class = "background">
-  <h1 class = "title">Simple Cart System</h1>
+<body class="body">
+
+  <h1 class="title">Simple Cart System</h1>
+
   <div class="main-container">
-  <div class="container">
-  <div class="bg1">
-    <h2 class="product">Product</h2>
-<ul class="productItem">
-  <li class = "Item"><p>Nova</p><p>₱16</p></li>
-  <li class = "Item"><p>Clover</p><p>₱8</p></li>
-  <li class = "Item"><p>Oreo</p><p>₱12</p></li>
-  <li class = "Item"><p>Hansel</p><p>₱12</p></li>
-  <li class = "Item"><p>Dewberry</p><p>₱12</p></li>
-  <li class = "Item"><p>Piattos</p><p>₱14</p></li>
-  <li class = "Item"><p>Fita</p><p>₱12</p></li>
-  <li class = "Item"><p>ChocoMucho</p></p>₱12</p></li>
-  <li class = "Item"><p>Pringles</p><p>₱55</p></li>
-  <li class = "Item"><p>Wafello</p><p>₱12</p></li>
-</ul>
-</div>
-</div>
+    
+    <!-- Products Section -->
+    <div class="section">
+      <h2 class="product">Products</h2>
+      <div class="section-content">
+        <ul class="productItem">
+          <li class="Item"><p>Nova</p><p>₱20</p></li>
+          <li class="Item"><p>Clover</p><p>₱8</p></li>
+          <li class="Item"><p>Oreo</p><p>₱12</p></li>
+          <li class="Item"><p>Hansel</p><p>₱8</p></li>
+          <li class="Item"><p>Dewberry</p><p>₱12</p></li>
+          <li class="Item"><p>Piattos</p><p>₱20</p></li>
+          <li class="Item"><p>Fita</p><p>₱12</p></li>
+          <li class="Item"><p>ChocoMucho</p><p>₱12</p></li>
+          <li class="Item"><p>Pringles</p><p>₱55</p></li>
+          <li class="Item"><p>Wafello</p><p>₱12</p></li>
+        </ul>
+      </div>
+    </div>
 
-      <div class="cartTitle">
-    <h2 class="cart2">Cart</h2>
-         
- </div>
-</div>
-</div>
-</div>
+    <!-- Cart Section -->
+    <div class="section">
+      <h2 class="product">Cart</h2>
+      <div class="section-content">
+        <div id="cart" class="cart"></div>
+        <p class="total-text">Total: <span id="total">₱0</span></p>
+      </div>
+    </div>
 
+  </div>
+
+  <script src="src/process.js"></script>
 </body>
 </html>

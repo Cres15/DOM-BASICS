@@ -1,24 +1,22 @@
-{
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.16",
-    "@tailwindcss/vite": "^4.1.16",
-    "tailwindcss": "^4.1.16"
-  },
-  "name": "dom-basics",
+
+  {
+  "name": "COding",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "process.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cres15/DOM-BASICS.git"
+    "dev": "node process.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Cres15/DOM-BASICS/issues"
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^4.1.14"
   },
-  "homepage": "https://github.com/Cres15/DOM-BASICS#readme"
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
